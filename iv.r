@@ -32,7 +32,7 @@ putOption <- function(S, K, T, r, q, sigma)  {
 calcIV <- function(mkt_px, call_or_put, S, K, T, r, q)  {
 
      loops <- 10
-     precision <- 0.001 		
+     precision <- 0.0001 		
      sigma <- 0.5
      loop <- 1
 
@@ -55,5 +55,5 @@ calcIV <- function(mkt_px, call_or_put, S, K, T, r, q)  {
      return(sigma)	 
 }
 
-implied_vol = calcIV(10.0, 'c', 386.98, 386, 30/365, 0.0001, 0.0)
+implied_vol = calcIV(1.70, 'c', 261.67, 260, 1/365, 0.000001, 0.0)
 print(implied_vol)
