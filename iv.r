@@ -31,8 +31,8 @@ putOption <- function(S, K, T, r, q, sigma)  {
 
 calcIV <- function(mkt_px, call_or_put, S, K, T, r, q)  {
 
-     loops <- 10
-     precision <- 0.0001 		
+     loops <- 12
+     precision <- 0.00005 		
      sigma <- 0.5
      loop <- 1
 
