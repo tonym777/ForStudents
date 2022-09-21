@@ -3,7 +3,7 @@
 
 using namespace std;
 
-double linear_regression(const vector<double> &x, const vector<double> &y)
+void linear_regression(const vector<double> &x, const vector<double> &y)
 {
 	 int n = x.size();
 	 double sumX=0, sumXX=0, sumY=0, sumXY=0, a=0, b=0;
